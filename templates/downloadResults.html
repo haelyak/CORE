@@ -32,130 +32,134 @@
         </div>
         <!-- The sidebar -->
         <div class="sidebar ">
-            <p>Refine by Age Group</p>
-            <label class="checkboxes ">Kindergarten
+            <form method=post>
+                <p>Refine by Age Group</p>
+                <label class="checkboxes ">Kindergarten
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">1st Grade
+                <label class="checkboxes ">1st Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">2nd Grade
+                <label class="checkboxes ">2nd Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">3rd Grade
+                <label class="checkboxes ">3rd Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">4th Grade
+                <label class="checkboxes ">4th Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">5th Grade
+                <label class="checkboxes ">5th Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">6th Grade
+                <label class="checkboxes ">6th Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">7th Grade
+                <label class="checkboxes ">7th Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">8th Grade
+                <label class="checkboxes ">8th Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">9th Grade
+                <label class="checkboxes ">9th Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">10th Grade
+                <label class="checkboxes ">10th Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">11th Grade
+                <label class="checkboxes ">11th Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">12th Grade
+                <label class="checkboxes ">12th Grade
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">College
+                <label class="checkboxes ">College
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
+            </form>
         </div>
 
         <div class="sidebar ">
-            <p>Refine by Subject</p>
-            <label class="checkboxes ">Math
+            <form method=post>
+                <p>Refine by Subject</p>
+                <label class="checkboxes ">Math
+                <input type="checkbox " value="math">
+                <span class="checkmark "></span>
+              </label>
+
+                <label class="checkboxes ">Science
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">Science
+                <label class="checkboxes ">Engineering
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">Engineering
+                <label class="checkboxes ">Health
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">Health
+                <label class="checkboxes ">Social Studies
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">Social Studies
+                <label class="checkboxes ">History
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">History
+                <label class="checkboxes ">Geography
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">Geography
+                <label class="checkboxes ">English
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
 
-            <label class="checkboxes ">English
+                <label class="checkboxes ">Language
                 <input type="checkbox ">
                 <span class="checkmark "></span>
               </label>
-
-            <label class="checkboxes ">Language
-                <input type="checkbox ">
-                <span class="checkmark "></span>
-              </label>
+            </form>
         </div>
 
         <div class="flex-container abeezee ">
             {% for name in info %}
             <div class="search ">
-                <h4><a href="file:///C:\Users\tsaik\Desktop\CS Homework\CS181\Final Project\static\{{name}}.txt ">{{name}}</a></h4>
+                <h4><a href="file:///C:\Users\tsaik\Desktop\CS Homework\CS181\Final Project\static\{{name}}.txt " target="_blank ">{{name}}</a></h4>
                 <!-- <h4>{{name}}</h4> -->
                 <p>{{info[name][info[name].find('Description'):info[name].find('Age')]}} </p>
             </div>

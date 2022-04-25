@@ -40,6 +40,16 @@ def fileInfo(keywordList):
     return fileStuff
 
 
+def refineSearch(keywordList, keyword):
+    refinedList = []
+    for result in keywordList :
+        f = open(result, "r", encoding="latin1")
+        contents = f.read()
+        if keyword in contents:
+            refinedList.append(result)
+        f.close()
+    return refinedList
+
 
 
 # if True:

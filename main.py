@@ -25,9 +25,11 @@ def index():
 def download():
     if request.method == 'POST':
         keywords = request.form['text']
+        refinewords = request.form['checkbox']
         path = 'static'
         results = fileSearch.keyword_search(path, keywords)
         info = fileSearch.fileInfo(results)
+        results = fileSearch.refineSearch(results, refinewords)
         return render_template('downloadResults.html', keywords=keywords, results=results, info=info)
     return render_template('downloadResults.html')
 
