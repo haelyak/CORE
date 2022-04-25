@@ -1,0 +1,5 @@
+Name: Kindergarten2.txt
+Description: HIHIHIH
+Age: Kindergarten
+Subject: Math
+Country: Sweden

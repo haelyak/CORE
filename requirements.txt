@@ -1,0 +1,18 @@
+click==8.1.2
+colorama==0.4.4
+distlib==0.3.4
+filelock==3.6.0
+Flask==2.1.1
+gensim @ file:///C:/Users/tsaik/Downloads/gensim-4.1.2-cp310-cp310-win_amd64.whl
+itsdangerous==2.1.2
+Jinja2==3.1.1
+MarkupSafe==2.1.1
+numpy==1.22.3
+opencv-contrib-python==4.5.5.64
+opencv-python==4.5.5.64
+platformdirs==2.5.1
+scipy==1.8.0
+six==1.16.0
+smart-open==5.2.1
+virtualenv==20.14.0
+Werkzeug==2.1.1

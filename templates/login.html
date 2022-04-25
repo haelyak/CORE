@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'index.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE</title>
+</head>
+
+<body>
+    <h1 class="abeezee">
+        <div class="topnav">
+            <form action="/login">
+                <button class="abeezee" type="submit">Login / Sign Up</button>
+            </form>
+            <a href="/blog">Blog</a>
+            <a href="/upload">Upload</a>
+            <a href="/download">Download</a>
+            <a class="active" href="/">Home</a>
+        </div>
+        <div class="header">
+            <h1>Login</h1>
+        </div>
+        <div class="logging abeezee">
+            <form method=post enctype="multipart/form-data">
+                <label for="uname">Username</label>
+                <input type="text" id="uname" name="username" placeholder="core">
+
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" placeholder="climate">
+
+                <input type=submit class="abeezee " value=Login>
+            </form>
+        </div>
+    </h1>
+</body>
+
+</html>
+</h1>
+
+</body>
+
+</html>

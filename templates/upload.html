@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'index.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE</title>
+</head>
+
+<body>
+    <h1 class="abeezee">
+        <div class="topnav">
+            <form action="/login">
+                <button class="abeezee" type="submit">Login / Sign Up</button>
+            </form>
+            <a href="/blog">Blog</a>
+            <a href="/upload">Upload</a>
+            <a href="/download">Download</a>
+            <a class="active" href="/">Home</a>
+        </div>
+        <div class="header">
+            <h1>Upload Resources</h1>
+        </div>
+        <div class="uploading abeezee">
+            <form method=post enctype="multipart/form-data">
+                <label for="fname">File Name</label>
+                <input type="text" id="fname" name="filename" placeholder="Climate Projections">
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="What is your file about?" style="height:200px"></textarea>
+
+                <label for="age-group">Age Group</label>
+                <select id="age-group" name="age-group">
+                <option value="Kindergarten">Kindergarten</option>
+                <option value="1st Grade">1st Grade</option>
+                <option value="2nd Grade">2nd Grade</option>
+                <option value="3rd Grade">3rd Grade</option>
+                <option value="4th Grade">4th Grade</option>
+                <option value="5th Grade">5th Grade</option>
+                <option value="6th Grade">6th Grade</option>
+                <option value="7th Grade">7th Grade</option>
+                <option value="8th Grade">8th Grade</option>
+                <option value="9th Grade">9th Grade</option>
+                <option value="10th Grade">10th Grade</option>
+                <option value="11th Grade">11th Grade</option>
+                <option value="12th Grade">12th Grade</option>
+                <option value="College">College</option>
+              </select>
+
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Health">Health</option>
+                <option value="Social Studies">Social Studies</option>
+                <option value="History">History</option>
+                <option value="Geography">Geography</option>
+                <option value="English">English</option>
+                <option value="Language">Language</option>
+              </select>
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Sweden">
+
+                <label for="myFile">File Upload</label>
+                <input type="file" class="custom-file-upload" id="myFile" name="file">
+
+                <input type=submit class="abeezee " value=Upload>
+            </form>
+        </div>
+    </h1>
+</body>
+
+</html>
+</h1>
+
+</body>
+
+</html>
