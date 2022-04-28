@@ -19,7 +19,7 @@ import config
 
 @app.route('/')
 def index():
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.route('/download/', methods=['GET', 'POST'])
 def download():
@@ -90,7 +90,7 @@ def blogpost1():
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        return render_template("home.html")
+        return render_template("index.html")
     return render_template("login.html")
 
 if __name__ == "__main__":
