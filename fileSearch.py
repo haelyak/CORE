@@ -14,14 +14,13 @@ def keyword_search(path, keyword) :
         foldername, LoDirs, LoFiles = item   # cool unpacking!
         
         for filename in LoFiles:
-                if filename[-3:] == "txt":
-                    fullfilename = foldername + "/" + filename
-                    # print(fullfilename)
-                    f = open(fullfilename, "r", encoding="latin1")
-                    contents = f.read()
-                    if keyword in contents:
-                        keywordList.append(fullfilename)
-                    f.close()
+                fullfilename = foldername + "/" + filename
+                # print(fullfilename)
+                f = open(fullfilename, "r", encoding="latin1")
+                contents = f.read()
+                if keyword in contents:
+                    keywordList.append(fullfilename)
+                f.close()
     return keywordList
 
 
@@ -33,7 +32,7 @@ def fileInfo(keywordList):
         contents = f.read()
         slicePlace = result.index("/")
         slicePeriod = result.index(".")
-        name = result[slicePlace+1:slicePeriod]
+        name = result[slicePlace+1:]
         if name not in fileStuff:
             fileStuff[name] = contents[:-1]
         f.close()
