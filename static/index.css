@@ -75,11 +75,12 @@ img.logosmall {
 }
 
 .who-we-are {
-    text-align: left;
-    padding: 10px;
-    margin-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1%;
     margin-left: 2%;
     margin-right: 2%;
+    margin-top: 2%;
     width: 44%;
     height: 300px;
     background: rgb(252, 252, 252);
@@ -88,25 +89,21 @@ img.logosmall {
 
 .who-we-are,
 h2 {
+    align-self: column;
     font-size: 30px;
-    /* text-align: 50%; */
     color: rgb(64, 64, 64);
 }
 
 .who-we-are,
 h4 {
-    /* text-align: 50%; */
     font-size: 18px;
-    padding-left: 50%;
-    /* padding-right: -50%; */
     color: rgb(64, 64, 64);
 }
 
+.who-we-are,
 img.logo {
     height: 265px;
     width: auto;
-    margin-left: -100%;
-    margin-top: -150%;
 }
 
 .search-container {
@@ -141,11 +138,19 @@ img.logo {
 
 .search-container button:hover {
     background: #ccc;
+    flex-direction: column;
+}
+
+.searchstuff {
+    font-size: 14px;
+    display: flex;
+    width: auto;
+    margin-left: 5%;
 }
 
 .sidebar {
-    margin-left: 100px;
-    font-size: 14px;
+    /* margin-left: 100px; */
+    width: auto;
 }
 
 
@@ -237,8 +242,7 @@ img.logo {
     display: flex;
     flex-direction: column;
     width: 85%;
-    margin-left: 4%;
-    margin-top: -50%;
+    margin-top: 20px;
     gap: 20px;
     align-content: space-between;
 }
@@ -247,8 +251,8 @@ img.logo {
     position: relative;
     padding: 10px;
     /* margin-top: -50%; */
-    margin-left: 25%;
-    width: 70%;
+    margin-left: 10%;
+    width: auto;
     height: 175px;
     background: rgb(252, 252, 252);
     box-shadow: 2px 2px 2px 2px rgba(63, 63, 63, 0.25);
@@ -358,7 +362,7 @@ textarea {
     margin-left: 2%;
     margin-right: 2%;
     width: 95%;
-    height: 300px;
+    height: auto;
     background: rgb(252, 252, 252);
     box-shadow: 2px 1px 2px 2px rgba(63, 63, 63, 0.25);
 }
