@@ -105,17 +105,17 @@
 <span class="checkmark"></span>
 </label>
                 </form>
-                <form method=post>
+                <form method=post enctype="multipart/form-data">
                     <p>Refine by Subject</p>
                     <label class="checkboxes">Math
-<input type="checkbox" value="math">
-<span class="checkmark"></span>
-</label>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
 
                     <label class="checkboxes">Science
-<input type="checkbox">
-<span class="checkmark"></span>
-</label>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
 
                     <label class="checkboxes">Engineering
 <input type="checkbox">
@@ -157,7 +157,7 @@
             <div class="flex-container abeezee ">
                 {% for name in info %}
                 <div class="search ">
-                    <h4><a href="file:///C:\Users\tsaik\Desktop\CS Homework\CS181\Final Project\static\{{name}} " target="_blank ">{{name}}</a></h4>
+                    <h4><a href="\static\{{name}}" target="_blank ">{{name}}</a></h4>
                     <!-- <h4>{{name}}</h4> -->
                     <p>{{info[name][info[name].find('Description'):info[name].find('Age')]}} </p>
                 </div>
